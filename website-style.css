@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.bg-1 { 
+	background-color: #C70039; /* Dark Red */
+	color: #ffffff;
+}
+.bg-2 { 
+	background-color: #8B203A; /* Darker Red*/
+	color: #ffffff;
+}
+.bg-3 { 
+	background-color: #ffffff; /* White */
+	color: #555555;
+}
+.bg-4 { 
+    background-color: #640E23;
+    color: #ffffff;
+}
+
+.img-me {
+	width: 20%;
+	height: 20%;
+	margin: auto; /* center image */
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #CF3157 !important;
+}
+
+body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {
+	font-size: 16px;
+}
+
+.margin {
+	margin-bottom: 45px;
+}
