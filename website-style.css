@@ -1,20 +1,17 @@
 @charset "utf-8";
 
-.bg-1 { 
-	background-color: #C70039; /* Dark Red */
-	color: #ffffff;
+body,h1 {
+	font-family: "Raleway", sans-serif
 }
-.bg-2 { 
-	background-color: #8B203A; /* Darker Red*/
-	color: #ffffff;
+body, html {
+	height: 100%
 }
-.bg-3 { 
-	background-color: #ffffff; /* White */
-	color: #555555;
-}
-.bg-4 { 
-    background-color: #640E23;
-    color: #ffffff;
+
+.bgimg {
+    background-image: url('img/sakura.jpeg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .img-me {
