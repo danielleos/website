@@ -8,10 +8,6 @@ body, html {
 	height: 100%
 }
 
-p {
-	font-size: 16px;
-}
-
 .bgimg {
     background-image: url('img/sakura.jpeg');
     min-height: 100%;
@@ -38,6 +34,10 @@ p {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+}
+
+p {
+	font-size: 16px;
 }
 
 .margin {
