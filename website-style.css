@@ -8,6 +8,14 @@ body, html {
 	height: 100%
 }
 
+.coming-soon {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: height
+}
+
 .bgimg {
     background-image: url('img/sakura.jpeg');
     min-height: 100%;
@@ -40,13 +48,7 @@ body, html {
      color: #CF3157 !important;
  }
  
- body {
-     font: 20px "Montserrat", sans-serif;
-     line-height: 1.8;
-     color: #f5f6f7;
- }
- 
- p {
+p {
  	font-size: 16px;
  }
 
@@ -65,10 +67,13 @@ body, html {
     letter-spacing: 5px;
 }
 
-p {
-	font-size: 16px;
-}
-
 .margin {
 	margin-bottom: 45px;
+}
+
+.text-white {
+	color: #ffffff !important
+}
+.text-black {
+	color: #000000 !important
 }
