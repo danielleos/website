@@ -10,11 +10,10 @@ body, html {
 
 .coming-soon h1 {
 	/*font-family: "Raleway", sans-serif*/
-	height: 100%;
-	width: 100%;
+	height: 100px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: height
+	line-height: 100px;
 }
 
 .bgimg {
