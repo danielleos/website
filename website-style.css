@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body, h1 {
+body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Raleway", sans-serif;
 }
 
@@ -17,10 +17,22 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('img/sakura-washed.jpg');
+    background-image: url('img/antelope-canyons.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.new-bgimg {
+    background-image: url('img/antelope-canyons.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.new-class {
+    font-family: "Raleway", sans-serif;
+    height: 100px;
 }
 
 .img-me {
@@ -77,10 +89,168 @@ p {
 .text-black {
 	color: #000000 !important;
 }
+.text-dark-gey {
+    color: #5f5f5f !important;
+}
+.text-grey {
+    color: #7f7f7f !important;   
+}
+.text-light-grey {
+    color: #b4b4b4 !important;
+}
 
-.text-bottom-left {
+/*Display divs in various positions in viewport*/
+.display-bottom-left {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	padding: 20px;
+}
+
+.display-top-left{
+    position:absolute;
+    left:0;
+    top:0
+}
+
+.display-top-right{
+    position:absolute;
+    right:0;
+    top:0
+}
+
+.display-bottom-right{
+    position:absolute;
+    right:0;
+    bottom:0
+}
+
+.display-middle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+
+.display-middle-left{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+}
+
+.display-middle-right{
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%)
+}
+
+.display-top-middle{
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%)
+}
+
+.display-bottom-middle{
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%)
+}
+
+.display-container:hover .display-hover{
+    display:block
+}
+
+.display-container:hover span.display-hover{
+    display:inline-block
+}
+
+.display-hover{
+    display:none
+}
+
+.display-position{
+    position:absolute
+}
+
+.circle{
+    border-radius:50%
+}
+
+/* Animations */
+.spin{
+    animation:spin 2s infinite linear
+}
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(359deg)}
+}
+
+.animate-fading{
+    animation:fading 10s infinite
+}
+@keyframes fading{
+    0%{opacity:0}
+    50%{opacity:1}
+    100%{opacity:0}}
+
+.animate-opacity{
+    animation:opac 0.8s
+}
+@keyframes opac{
+    from{opacity:0} 
+    to{opacity:1}
+}
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+@keyframes animatetop{
+    from{top:-300px;opacity:0} 
+    to{top:0;opacity:1}
+}
+.animate-left{
+    position:relative;
+    animation:animateleft 0.4s
+}
+@keyframes animateleft{
+    from{left:-300px;opacity:0} 
+    to{left:0;opacity:1}
+}
+.animate-right{
+    position:relative;
+    animation:animateright 0.4s
+}
+@keyframes animateright{
+    from{right:-300px;opacity:0} 
+    to{right:0;opacity:1}
+}
+.animate-bottom{
+    position:relative;
+    animation:animatebottom 0.4s
+}
+@keyframes animatebottom{
+    from{bottom:-300px;opacity:0} 
+    to{bottom:0;opacity:1}
+}
+.animate-zoom {
+    animation:animatezoom 0.6s
+}
+@keyframes animatezoom{
+    from{transform:scale(0)} 
+    to{transform:scale(1)}
+}
+.animate-input{
+    transition:width 0.4s ease-in-out
+}
+.animate-input:focus{
+    width:100% !important
 }
