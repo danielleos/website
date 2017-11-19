@@ -17,7 +17,7 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('img/sakura.jpeg');
+    background-image: url('img/sakura-washed.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
