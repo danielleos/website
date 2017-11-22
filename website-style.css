@@ -83,6 +83,7 @@ p {
 	margin-bottom: 45px;
 }
 
+/* Text colours */
 .text-white {
 	color: #ffffff !important;
 }
@@ -99,7 +100,7 @@ p {
     color: #b4b4b4 !important;
 }
 
-/*Display divs in various positions in viewport*/
+/* Display divs in various positions in viewport */
 .display-bottom-left {
 	position: absolute;
 	bottom: 0px;
