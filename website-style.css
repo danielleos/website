@@ -17,14 +17,14 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('img/ben-neale-arcade.jpg');
+    background-image: url('img/canyons.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
 }
 
 .new-bgimg {
-    background-image: url('img/arcade.jpg');
+    background-image: url('img/ben-neale-arcade.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
