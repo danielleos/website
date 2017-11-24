@@ -62,6 +62,9 @@ body, html {
 
 .placeholder {
 	background-color: #CF3157;
+	height: 80%;
+	bottom: 0px;
+	padding: 20px;
 }
  
 p {
