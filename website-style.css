@@ -62,7 +62,9 @@ body, html {
 
 .placeholder {
 	background-color: #CF3157;
-	height: 80%;
+	height: 200px;
+	width: 30%;
+	position: absolute;
 	bottom: 0px;
 	padding: 20px;
 }
