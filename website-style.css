@@ -61,6 +61,7 @@ body, html {
  }
 
 .placeholder {
+	float: left;
 	background-color: #CF3157;
 	height: 200px;
 	width: 30%;
