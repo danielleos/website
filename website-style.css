@@ -59,6 +59,10 @@ body, html {
  .navbar-nav li a:hover {
      color: #CF3157 !important;
  }
+
+.placeholder {
+	background-color: #CF3157;
+}
  
 p {
  	font-size: 16px;
@@ -100,7 +104,7 @@ p {
     color: #b4b4b4 !important;
 }
 
-/* Display divs in various positions in viewport */
+/* Display positions */
 .display-bottom-left {
 	position: absolute;
 	bottom: 0px;
