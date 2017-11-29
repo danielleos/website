@@ -45,21 +45,8 @@ body, html {
      padding-top: 70px;
      padding-bottom: 70px;
  }
- 
- .navbar {
-     padding-top: 15px;
-     padding-bottom: 15px;
-     border: 0;
-     border-radius: 0;
-     margin-bottom: 0;
-     font-size: 12px;
-     letter-spacing: 5px;
- }
- 
- .navbar-nav li a:hover {
-     color: #CF3157 !important;
- }
 
+/* Placeholder div class until I create my own images for arcade games */
 .placeholder {
 	float: left;
 	background-color: #CF3157;
@@ -73,21 +60,6 @@ body, html {
 p {
  	font-size: 16px;
  }
-
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
 
 .margin {
 	margin-bottom: 45px;
