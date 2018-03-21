@@ -2,10 +2,10 @@
 A GitHub Pages project for my personal website development.
 
 ## Pre-production Content
-- "Coming Soon" landing page
+- "Hello" landing page
 
 ## Post-production Content
-- Landing page
+- Home Page
 - Coding portfolio (CV)
 - Blog posts/life updates
 
@@ -16,15 +16,16 @@ A GitHub Pages project for my personal website development.
 - 1.3. Plan blog/personal news section
 
 2. Create index.html
-- 2.1. Redirect to coming soon page
-- 2.2. Create wireframe for public index.html page
-- 2.3. Add bootstrapping for design
-- 2.4. Create own CSS stylesheets
+- 2.1. CSS Animation Landing Page
+- 2.2. Create on-click event to click through to home page
 
-3. Create cv.html
-- 3.1. Add cv content
+3. Create home.html
+- 3.1. Create wireframe for public home.html page
 
-4. Create blog.html
-- 4.1. Add blog content
+4. Create cv.html
+- 4.1. Add cv content
 
-5. Embed code snippets / codepens
+5. Create blog.html
+- 5.1. Add blog content
+
+6. Embed code snippets / codepens
