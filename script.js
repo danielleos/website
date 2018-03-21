@@ -1,3 +1,4 @@
+// Hello Animation Landing Page
 var curry = function curry(f) {
     return function () {
         for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
@@ -16,6 +17,7 @@ var compose = function compose(f, g) {
         return f(g(x));
     };
 };
+
 var composeN = function composeN() {
     for (var _len2 = arguments.length, fns = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
         if (window.CP.shouldStopExecution(2)) { break; }
@@ -37,3 +39,5 @@ var composeN = function composeN() {
         }, args);
     };
 };
+
+// Home page after landing-page

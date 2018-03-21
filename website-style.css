@@ -1,3 +1,4 @@
+/* Hello Animation */
 *,
 *:before,
 *:after {
@@ -442,3 +443,5 @@ body {
             transform: translateY(-101%);
   }
 }
+
+/* Home Page Style */
