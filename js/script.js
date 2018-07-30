@@ -41,3 +41,9 @@ var composeN = function composeN() {
 };
 
 // Home page after landing-page
+$("#en-jp-name").click(function () {
+    if ($(this).text() == "Danielle O'Sullivan")
+        $(this).text("ダニエル　オーサリーバン")
+    else
+        $(this).text("Danielle O'Sullivan");
+});
