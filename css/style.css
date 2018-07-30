@@ -1,0 +1,86 @@
+/* LightNovelPOP font */
+@font-face {
+	font-family: LightNovelPOP;
+	src: url(fonts/LightNovelPOP.woff) format("woff"),
+		 url(fonts/LightNovelPOP.ttf) format("truetype"),
+		 url(fonts/LightNovelPOP.woff2) format("woff2"),
+		 url(fonts/LightNovelPOP.otf) format("opentype");
+	font-weight: normal;
+    font-style: normal;
+}
+
+/* Kei font */
+@font-face {
+	font-family: Kei;
+	src: url(fonts/kei.woff) format("woff"),
+		 url(fonts/kei.woff2) format("woff2"),
+		 url(fonts/kei.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* JK Gothic M Sans Serif font */
+@font-face {
+	font-family: JK Gothic M;
+	src: url(fonts/JKG-M_3.woff) format("woff"),
+		 url(fonts/JKG-M_3.woff2) format("woff2"),
+		 url(fonts/JKG-M_3.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: LightNovelPOP, Kei, JK Gothic M, Josefin Sans;
+	font-size: 16px;
+	text-align: center;
+}
+
+h1 {
+	font-family: LightNovelPOP, Kei, JK Gothic M, Josefin Sans;
+	font-size: 72px;
+	color: white;
+}
+
+h2 {
+	font-family: Kei, JK Gothic M, Josefin Sans, LightNovelPOP;
+	font-size: 48px;
+	color: white;
+}
+
+h3 {
+	font-family: Kei, JK Gothic M, Josefin Sans, LightNovelPOP;
+	font-size: 36px;
+	color: white;
+}
+
+h4 {
+	font-family: Kei, JK Gothic M, Josefin Sans, LightNovelPOP;
+	font-size: 24px;
+	color: white;
+}
+
+h5 {
+	font-family: JK Gothic M, Josefin Sans, LightNovelPOP, Kei;
+	font-size: 18px;
+	color: white;
+}
+
+p {
+	font-family: LightNovelPOP, Kei, JK Gothic M, Josefin Sans;
+	font-size: 16px;
+	color: white;
+}
+
+div.close-container {
+	margin: -60px;
+}
+
+div.container {
+	margin: 100px;
+}
