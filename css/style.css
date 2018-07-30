@@ -77,10 +77,37 @@ p {
 	color: white;
 }
 
+/* unvisited and visited link */
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover, a:active {
+	color: rgb(255, 0, 128);
+	text-decoration: underline;
+}
+
 div.close-container {
-	margin: -60px;
+	margin: -55px;
 }
 
 div.container {
-	margin: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 30px;
+}
+
+img.invert {
+	filter: invert(100);
+	-webkit-filter: invert(100);
+}
+
+img.icon {
+	height: 20px;
+	padding: 20px;
 }
