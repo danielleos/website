@@ -102,6 +102,17 @@ div.container {
 	padding: 30px;
 }
 
+div.paragraph {
+	width: 600px;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	margin: auto;
+}
+
 img.invert {
 	filter: invert(100);
 	-webkit-filter: invert(100);
