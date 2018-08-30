@@ -16,8 +16,8 @@ A GitHub Pages project for my personal website development.
 - [ ] 1.3. Plan blog/personal news section
 
 2. Create index.html
-- [ ] 2.1. CSS Animation Landing Page
-- [ ] 2.2. Create on-click event to click through to home page
+- [x] 2.1. CSS Animation Landing Page
+- [x] 2.2. Create on-click event to click through to home page
 
 3. Create home.html
 - [ ] 3.1. Create wireframe for public home.html page
