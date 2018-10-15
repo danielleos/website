@@ -4,10 +4,9 @@ A GitHub Pages project for my personal website development.
 ## Pre-production Content
 - [x] "Hello" landing page 
 
-## Post-production Content
+## Content
 - [ ] Home Page
 - [ ] Coding portfolio (CV)
-- [ ] Blog posts/life updates
 
 ## Roadmap
 1. Plan overall website
@@ -25,9 +24,6 @@ A GitHub Pages project for my personal website development.
 4. Create cv.html
 - [ ] 4.1. Add cv content
 
-5. Create blog.html
-- [ ] 5.1. Add blog content
-
-6. Embed code snippets / codepens
+5. Embed code snippets / codepens
 - [ ] Plan what highlights to include in embed
 - [ ] Add highlights
