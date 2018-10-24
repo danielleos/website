@@ -73,6 +73,7 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/typed.min.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.min.js"></script>
 	<script>
 		// ##########################
 		// Typing
@@ -96,9 +97,6 @@
 		// ##########################
 		// Header & Navbar
 		// ##########################
-		/**
-	   * Fullscreen menu
-	   */
 			$('.fullscreenmenu__module').each(function () {
 				var self = $(this),
 					triggerID = self.attr('trigger');
@@ -113,14 +111,6 @@
 				});
 			});
 
-			/**
-			   * Masonry
-			   */
-			$('.grid__inner').masonry({
-				itemSelector: '.grid-item',
-				columnWidth: '.grid-sizer'
-			});
-		
 		var wh = $(window).height(),
 				half = wh / 5,
 				headerHeight = $('header').outerHeight();
