@@ -16,7 +16,7 @@ A GitHub Pages project for my personal website development.
 - [x] Create wireframe for public home.html page
 
 3. Create cv.html
-- [ ] Add downloadable cv content
+- [x] Add downloadable cv content
 
 5. Embed code snippets / codepens
 - [ ] Plan what to showcase
