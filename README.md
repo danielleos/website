@@ -9,14 +9,14 @@ A GitHub Pages project for my personal website development.
 
 ## Roadmap
 1. Plan overall website
-- [x] 1.1. Plan home page
-- [x] 1.2. Plan interactive CV page
+- [x] Plan home page
+- [x] Plan interactive CV page
 
 2. Create index.html
-- [x] 3.1. Create wireframe for public home.html page
+- [x] Create wireframe for public home.html page
 
-4. Create cv.html
-- [ ] 4.1. Add downloadable cv content
+3. Create cv.html
+- [ ] Add downloadable cv content
 
 5. Embed code snippets / codepens
 - [ ] Plan what to showcase
