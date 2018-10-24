@@ -41,8 +41,12 @@ body {
 	text-align: center;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5 {
 	font-family: Kei, LightNovelPOP, JK Gothic M, Josefin Sans, sans-serif;
+}
+
+p {
+	font-family: Josefin Sans, JK Gothic M, sans-serif;
 }
 
 h1 {
@@ -83,7 +87,7 @@ a:link, a:visited {
 
 /* mouse over link */
 a:hover, a:active {
-	color: rgb(255, 0, 128);
+	color: rgb(196, 64, 75);
 	text-decoration: none;
 }
 
@@ -141,6 +145,18 @@ img.invert {
 img.icon {
 	height: 20px;
 	padding: 20px;
+}
+
+.button {
+	padding: 9px 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.button:hover p {
+	color: rgb(196, 64, 75);
 }
 
 
