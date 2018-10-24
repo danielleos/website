@@ -159,6 +159,12 @@ img.icon {
 	color: rgb(196, 64, 75);
 }
 
+.svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+}
 
 /* ################################# */
 /* ####### JAPANESE ON HOVER ####### */
