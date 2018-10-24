@@ -1,49 +1,157 @@
+<!-- After click-through by user -->
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>Danielle O'Sullivan</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="refresh" content="5.5; url=home">
-		<meta name="keywords" content="automatic redirection">
-		<link rel="stylesheet" href="css/landing-style.css">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
-		<link rel="shortcut icon" type="image/x-icon" href="img/rose-favicon.ico">
-		<link rel="icon" type="image/x-icon" href="img/rose-favicon.ico">
-		<script type="text/javascript" src="js/script.js"></script>
-		<script src="js/jquery-3.3.1.min.js"></script>
-	</head>
+<head>
+	<title>Danielle O'Sullivan | Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+	<link rel="stylesheet" href="css/fonts/LightNovelPOP.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/rose-favicon.ico">
+	<link rel="icon" type="image/x-icon" href="img/rose-favicon.ico">
+</head>
 
-	<body>
-		<a href='home'>
-			<div class="stage">
-				<div class="wrapper">
-					<div class="slash"></div>
-					<div class="sides">
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-						<div class="side"></div>
-					</div>
-					<div class="text">
-						<div class="text--backing">Hello</div>
-						<div class="text--left">
-							<div class="inner">Hello</div>
-						</div>
-						<div class="text--right">
-							<div class="inner">Hello</div>
-						</div>
-					</div>
+<body>
+	<div class="page-wrap">
+		<!-- header -->
+		<header class="header header--fixed">
+			<div class="header__inner">
+				<div class="navbar-toggle" id="fs-button">
+					<div class="navbar-icon"><span></span></div>
 				</div>
 			</div>
-		</a>
-	</body>
-	<footer class="redirect">
-		<a href='home'>
-			<p id="redirect">Click if not automatically re-directed</p>
-		</a>
-	</footer>
+			<!-- fullscreenmenu__module -->
+			<div class="fullscreenmenu__module" trigger="#fs-button">
+				<!-- overlay-menu -->
+				<nav class="overlay-menu">
+					<!--  -->
+					<ul class="wil-menu-list">
+						<li class="current-menu-item"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul><!--  -->
+				</nav><!-- End / overlay-menu -->
+			</div><!-- End / fullscreenmenu__module -->
+		</header><!-- End / header -->
+		<!-- Section -->
+		<section class="awe-section">
+			<div class="container">
+				<!-- page-title -->
+				<div class="page-title">
+					<div class="en">
+						<a href="">
+							<h3 class="jp"><span>Danielle O'Sullivan</span></h3>
+						</a>
+					</div>
+					<h2 class="page-title__title close-container">
+						<!-- typing__module -->
+						<div class="typing__module close-container">
+							<div class="typed-strings close-container">
+								<span>software engineer</span>
+								<span>web designer</span>
+								<span>data scientist</span>
+							</div>
+							<span class="typed"></span>
+						</div><!-- End / typing__module -->
+					</h2>
+					<div class="divider"></div>
+					<!-- Social Icons -->
+					<div class="close-container">
+						<a href="https://instagram.com/d__os"><img class="invert icon" src="img/ig-icon.png"></a>
+						<a href="https://twitter.com/danieiiej"><img class="icon" style="height: 30px;" src="img/twitter_no-circle.png"></a>
+						<a href="https://github.com/danielleos"><img class="invert icon" src="img/mark-github.svg"></a>
+					</div>
+				</div><!-- End / page-title -->
+			</div>
+		</section>
+		<!-- End / Section -->
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/typed.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script>
+		// ##########################
+		// Typing
+		// ##########################
+		$('.typing__module').each(function (index) {
+			var self = $(this),
+				_wrapper = $('.typed', self)[0],
+				optData = eval('(' + self.attr('data-options') + ')'),
+				optDefault = {
+					stringsElement: self.find('.typed-strings')[0],
+					typeSpeed: 50,
+					backSpeed: 50,
+					fadeOut: false,
+					smartBackspace: true,
+					loop: true
+				},
+				options = $.extend(optDefault, optData);
+			var typed = new Typed(_wrapper, options);
+		});
+
+		// ##########################
+		// Header & Navbar
+		// ##########################
+		/**
+	   * Fullscreen menu
+	   */
+			$('.fullscreenmenu__module').each(function () {
+				var self = $(this),
+					triggerID = self.attr('trigger');
+
+				self.on("click", function () {
+					$(triggerID).toggleClass('open');
+					$(this).toggleClass('open');
+				});
+				$(triggerID).on("click", function () {
+					$(triggerID).toggleClass('open');
+					self.toggleClass('open');
+				});
+			});
+
+			/**
+			   * Masonry
+			   */
+			$('.grid__inner').masonry({
+				itemSelector: '.grid-item',
+				columnWidth: '.grid-sizer'
+			});
+		
+		var wh = $(window).height(),
+				half = wh / 5,
+				headerHeight = $('header').outerHeight();
+
+			$(window).scroll(function () {
+				var scrollTop = $(window).scrollTop();
+
+				if (scrollTop >= half) {
+					$('header').addClass('is-scroll');
+				} else {
+					$('header').removeClass('is-scroll');
+				}
+			});
+
+			$('.onepage-nav').dropdownMenu({
+				menuClass: 'onepage-menu',
+				breakpoint: 1200,
+				toggleClass: 'active',
+				classButtonToggle: 'navbar-toggle',
+				subMenu: {
+					class: 'sub-menu',
+					parentClass: 'menu-item-has-children',
+					toggleClass: 'active'
+				}
+			});
+
+			$('.onepage-nav').onePageNav({
+				currentClass: 'current-menu-item',
+				scrollOffset: headerHeight
+			});
+	</script>
+</body>
 
 </html>
