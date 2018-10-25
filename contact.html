@@ -41,78 +41,10 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/typed.min.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
         <script type="text/javascript" src="js/jquery.nav.min.js"></script>
-        <script>
-            // ##########################
-            // Typing
-            // ##########################
-            $('.typing__module').each(function (index) {
-                var self = $(this),
-                    _wrapper = $('.typed', self)[0],
-                    optData = eval('(' + self.attr('data-options') + ')'),
-                    optDefault = {
-                        stringsElement: self.find('.typed-strings')[0],
-                        typeSpeed: 50,
-                        backSpeed: 50,
-                        fadeOut: false,
-                        smartBackspace: true,
-                        loop: true
-                    },
-                    options = $.extend(optDefault, optData);
-                var typed = new Typed(_wrapper, options);
-            });
-
-            // ##########################
-            // Header & Navbar
-            // ##########################
-            $('.fullscreenmenu__module').each(function () {
-                var self = $(this),
-                    triggerID = self.attr('trigger');
-
-                self.on("click", function () {
-                    $(triggerID).toggleClass('open');
-                    $(this).toggleClass('open');
-                });
-                $(triggerID).on("click", function () {
-                    $(triggerID).toggleClass('open');
-                    self.toggleClass('open');
-                });
-            });
-
-            var wh = $(window).height(),
-                half = wh / 5,
-                headerHeight = $('header').outerHeight();
-
-            $(window).scroll(function () {
-                var scrollTop = $(window).scrollTop();
-
-                if (scrollTop >= half) {
-                    $('header').addClass('is-scroll');
-                } else {
-                    $('header').removeClass('is-scroll');
-                }
-            });
-
-            $('.onepage-nav').dropdownMenu({
-                menuClass: 'onepage-menu',
-                breakpoint: 1200,
-                toggleClass: 'active',
-                classButtonToggle: 'navbar-toggle',
-                subMenu: {
-                    class: 'sub-menu',
-                    parentClass: 'menu-item-has-children',
-                    toggleClass: 'active'
-                }
-            });
-
-            $('.onepage-nav').onePageNav({
-                currentClass: 'current-menu-item',
-                scrollOffset: headerHeight
-            });
-        </script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
