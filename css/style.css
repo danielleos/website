@@ -176,7 +176,6 @@ img.icon {
     padding: 20px;
     justify-content: center;
     margin: auto;
-    width: 240px;
 }
 
 .paragraph {
@@ -2135,7 +2134,7 @@ img.icon {
     margin: 0 auto;
     box-shadow: none;
     position: relative;
-    font-family: Kei, LightNovelPOP, JK Gothic M, Josefin Sans, sans-serif;
+    font-family: Kei, LightNovelPOP, JK Gothic M, Josefin Sans, sans-serif;    
 }
 
 .progress:after{
@@ -2170,10 +2169,6 @@ img.icon {
     border-style: solid;
     position: absolute;
     top: 0;
-}
-
-@media only screen and (max-width: 990px){
-    .progress{ margin-bottom: 20px; }
 }
 
 .progress .progress-left .progress-bar{
@@ -2315,4 +2310,8 @@ img.icon {
         -webkit-transform: rotate(36deg);
         transform: rotate(36deg);
     }
+}
+
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
 }
