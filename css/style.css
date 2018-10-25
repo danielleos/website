@@ -110,15 +110,15 @@ img.icon {
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 5px;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 .button:hover p {
 	color: rgb(196, 64, 75);
 }
 
-.svg {
-    fill: white !important;
+img.svg {
+    fill: #fff !important;
     width: 20px;
     height: 20px;
     padding: 15px;
@@ -163,7 +163,20 @@ img.icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: -40px auto;
+	margin: -10px auto;
+}
+
+.button-container {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .progress-label {
@@ -284,7 +297,7 @@ img.icon {
     width: 50px;
     height: 2px;
     background-color: #fff;
-	margin: 40px auto;
+	margin: 30px auto;
 }
 
 .typed-cursor {
