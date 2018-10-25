@@ -95,12 +95,12 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-img.invert {
+.invert {
 	filter: invert(100);
 	-webkit-filter: invert(100);
 }
 
-img.icon {
+.icon {
 	height: 20px;
 	padding: 20px;
 }
@@ -117,11 +117,9 @@ img.icon {
 	color: rgb(196, 64, 75);
 }
 
-.svg-white {
-    fill: #fff !important;
-    width: 20px;
-    height: 20px;
+object {
     padding: 15px;
+    pointer-events: none;
 }
 
 /* ################################## */
@@ -137,10 +135,6 @@ img.icon {
 	margin: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-}
-
-.name {
-    padding: 10px;
 }
 
 @media(min-width: 768px) {
@@ -163,7 +157,7 @@ img.icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: -10px auto;
+    margin: -10px auto;
 }
 
 .button-container {
@@ -174,9 +168,13 @@ img.icon {
 	align-content: center;
 	padding: 10px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.name {
+    padding: 10px;
 }
 
 .progress-label {
@@ -189,7 +187,6 @@ img.icon {
 
 .progress-bar-container {
     float: left;
-    flex-direction: row;
     padding: 20px;
     justify-content: center;
     margin: auto;
