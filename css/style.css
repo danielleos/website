@@ -117,7 +117,7 @@ img.icon {
 	color: rgb(196, 64, 75);
 }
 
-img.svg {
+.svg-white {
     fill: #fff !important;
     width: 20px;
     height: 20px;
