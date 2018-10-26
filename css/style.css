@@ -127,29 +127,25 @@ object {
 /* ################################## */
 .container {
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	padding: 50px;
 	margin: auto;
 	padding-left: 15px;
-	padding-right: 15px;
+    padding-right: 15px;
+    width: 100%;
 }
-
-@media(min-width: 768px) {
+@media(max-width: 768px) {
 	.container {
-		width: 750px
+        flex-direction: column;
 	}
 }
-@media(min-width: 992px) {
+@media(max-width: 992px) {
 	.container {
-		width: 970px
-	}
-}
-@media (min-width:1200px) {
-	.container {
-		width:1170px
+        flex-direction: column;
 	}
 }
 
@@ -186,10 +182,18 @@ object {
 }
 
 .progress-bar-container {
-    float: left;
     padding: 20px;
     justify-content: center;
-    margin: auto;
+}
+@media(max-width: 768px) {
+	.progress-bar-container {
+        width: 100%;
+    }
+}
+@media(max-width: 992px) {
+	.progress-bar-container {
+        width: 100%;
+	}
 }
 
 .paragraph {
