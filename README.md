@@ -5,7 +5,7 @@ A GitHub Pages project for my personal website development.
 ## Content
 - [x] Home Page
 - [ ] Coding portfolio (CV)
-- [ ] Contact page
+- [x] Contact page
 
 ## Roadmap
 1. Plan overall website
