@@ -1,38 +1,28 @@
 // ##########################
 // Collapsible Animation
 // ##########################
-var coll = document.getElementsByClassName("collapsible");
-for (var i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
+var collapsibleList = document.getElementsByClassName("collapsible");
+for (var i = 0; i < collapsibleList.length; i++) {
+    collapsibleList[i].addEventListener("click", function () {
         this.classList.toggle("active");
+        var currentId = this.id;
         var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+        if (content.style.maxHeight) {  // if the content is open
+            content.style.maxHeight = null;  // close it
+        } else {  // if the element is closed
+            var allCollapsibles = collapsibleList;  // get HTMLCollection
+            Array.prototype.forEach.call(allCollapsibles, function (element) {  // for every element
+                if (element.classList.contains("active") && element.id !== currentId) {  // if that element has the active class and it does not have the currentId of the one that has been clicked
+                    content.style.maxHeight = null;  // remove the maxHeight value - close it
+                } else if (element.id == currentId) {  // if that element doesn't have the active class
+                    content.style.maxHeight = content.scrollHeight + "px";  // open the element
+                }
+            });
+            // content.style.maxHeight = content.scrollHeight + "px";
+            // console.log("add maxHeight: " + content.style.maxHeight);
         }
     });
-};
-// var collabsibleList = document.getElementsByClassName("collabsible");
-// var contentList = document.getElementsByClassName("content");
-
-// for (var i = 0; i < collabsibleList.length; i++) {
-//     collabsibleList[i].onclick = function () {
-//         var setClasses = !this.classList.contains("active");
-//         setClass(collabsibleList, "active", "remove");
-//         setClass(contentList, "show", "remove");
-
-//         if (setClasses) {
-//             this.classList.toggle("active");
-//             this.nextElementSibling.classList.toggle("show");
-//         }
-//     }
-// }
-// function setClass(els, className, fnName) {
-//     for (var i = 0; i < els.length; i++) {
-//         els[i].classList[fnName](className);
-//     }
-// }
+}
 // ##########################
 // Typing
 // ##########################
@@ -81,23 +71,6 @@ $(window).scroll(function () {
     } else {
         $('header').removeClass('is-scroll');
     }
-});
-
-$('.onepage-nav').dropdownMenu({
-    menuClass: 'onepage-menu',
-    breakpoint: 1200,
-    toggleClass: 'active',
-    classButtonToggle: 'navbar-toggle',
-    subMenu: {
-        class: 'sub-menu',
-        parentClass: 'menu-item-has-children',
-        toggleClass: 'active'
-    }
-});
-
-$('.onepage-nav').onePageNav({
-    currentClass: 'current-menu-item',
-    scrollOffset: headerHeight
 });
 
 // ###################################
