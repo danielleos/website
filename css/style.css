@@ -217,6 +217,13 @@ object {
     font-size: 20px;
 }
 
+.subtitle {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-family: Josefin Sans, sans-serif;
+}
+
 /* ################################# */
 /* ####### JAPANESE ON HOVER ####### */
 /* ################################# */
@@ -2332,4 +2339,100 @@ object {
 
 @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
+}
+
+/* ############################# */
+/* ######## COLLAPSIBLE ######## */
+/* ############################# */
+.collapse-panel .panel-default > .panel-heading {
+  padding: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	.collapse-panel {
+        max-width: 100%;
+    }
+    .panel-default {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 992px) {
+	.collapse-panel {
+        max-width: 100%;
+    }
+    .panel-default {
+        max-width: 100%;
+    }
+}
+
+.panel-heading a {
+    padding: 18px;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-family: Josefin Sans, sans-serif;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: left;
+}
+@media only screen and (max-width: 768px) {
+	.panel-heading {
+        max-width: 100%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.panel-heading {
+        max-width: 100%;
+	}
+}
+
+.panel {
+    border: none;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	.panel {
+        max-width: 100%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.panel {
+        max-width: 100%;
+	}
+}
+
+.panel-heading a:after {
+    font-family: Josefin Sans, sans-serif;
+    content: "\2501";
+    position: absolute;
+    right: 20px;
+}
+
+.panel-heading a.collapsed:after {
+    content: "\254b";
+}
+
+.panel-heading a.collapsed {
+    background: #000;
+    border: 1px solid #fff !important;
+    color: #fff;
+}
+
+.panel-body {
+    padding: 1.5em;
+    background-color: #000;
+    text-align: left;
+    width: 100%;
+    border: none;
+}
+@media only screen and (max-width: 768px) {
+	.panel-body {
+        max-width: 100%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.panel-body {
+        max-width: 100%;
+	}
 }

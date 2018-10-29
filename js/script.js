@@ -1,45 +1,28 @@
-// Hello Animation Landing Page
-var curry = function curry(f) {
-    return function () {
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            if (window.CP.shouldStopExecution(1)) { break; }
-            args[_key] = arguments[_key];
+// ##########################
+// Collapsible Animation
+// ##########################
+var collapsibleList = document.getElementsByClassName("collapsible");
+for (var i = 0; i < collapsibleList.length; i++) {
+    collapsibleList[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var currentId = this.id;
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {  // if the content is open
+            content.style.maxHeight = null;  // close it
+        } else {  // if the element is closed
+            var allCollapsibles = collapsibleList;  // get HTMLCollection
+            for (var j = 0; j < collapsibleList.length; j++) {  // for every element
+                if ((allCollapsibles[j].classList.contains("active")) && (allCollapsibles[j].id !== currentId)) {  // if that element has the active class and it does not have the currentId of the one that has been clicked
+                    content.style.maxHeight = null;  // remove the maxHeight value - close it
+                } else if (allCollapsibles[j].id == currentId) {  // if that element doesn't have the active class
+                    content.style.maxHeight = content.scrollHeight + "px";  // open the element
+                }
+            }
+            // content.style.maxHeight = content.scrollHeight + "px";
+            // console.log("add maxHeight: " + content.style.maxHeight);
         }
-        window.CP.exitedLoop(1);
-
-
-        return args.length >= f.length ? f.apply(undefined, args) : curry(f.bind.apply(f, [f].concat(args)));
-    };
-};
-
-var compose = function compose(f, g) {
-    return function (x) {
-        return f(g(x));
-    };
-};
-
-var composeN = function composeN() {
-    for (var _len2 = arguments.length, fns = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-        if (window.CP.shouldStopExecution(2)) { break; }
-        fns[_key2] = arguments[_key2];
-    }
-    window.CP.exitedLoop(2);
-
-
-    return function () {
-        for (var _len3 = arguments.length, args = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-            if (window.CP.shouldStopExecution(3)) { break; }
-            args[_key3] = arguments[_key3];
-        }
-        window.CP.exitedLoop(3);
-
-
-        return fns.reverse().reduce(function (x, f) {
-            return f.apply(f, [].concat(x));
-        }, args);
-    };
-};
-
+    });
+}
 // ##########################
 // Typing
 // ##########################
@@ -90,56 +73,39 @@ $(window).scroll(function () {
     }
 });
 
-$('.onepage-nav').dropdownMenu({
-    menuClass: 'onepage-menu',
-    breakpoint: 1200,
-    toggleClass: 'active',
-    classButtonToggle: 'navbar-toggle',
-    subMenu: {
-        class: 'sub-menu',
-        parentClass: 'menu-item-has-children',
-        toggleClass: 'active'
-    }
-});
+// ###################################
+// SVG Re-colouring - Not in use atm
+// ###################################	
+// jQuery('img.svg').each(function () {
+//     var $img = jQuery(this);
+//     var imgID = $img.attr('id');
+//     var imgClass = $img.attr('class');
+//     var imgURL = $img.attr('src');
 
-$('.onepage-nav').onePageNav({
-    currentClass: 'current-menu-item',
-    scrollOffset: headerHeight
-});
+//     jQuery.get(imgURL, function (data) {
+//         // Get the SVG tag, ignore the rest
+//         var $svg = jQuery(data).find('svg');
 
-// ##########################
-// SVG Re-colouring
-// ##########################	
-jQuery('img.svg').each(function () {
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
+//         // Add replaced image's ID to the new SVG
+//         if (typeof imgID !== 'undefined') {
+//             $svg = $svg.attr('id', imgID);
+//         }
+//         // Add replaced image's classes to the new SVG
+//         if (typeof imgClass !== 'undefined') {
+//             $svg = $svg.attr('class', imgClass + ' replaced-svg');
+//         }
 
-    jQuery.get(imgURL, function (data) {
-        // Get the SVG tag, ignore the rest
-        var $svg = jQuery(data).find('svg');
+//         // Remove any invalid XML tags as per http://validator.w3.org
+//         $svg = $svg.removeAttr('xmlns:a');
 
-        // Add replaced image's ID to the new SVG
-        if (typeof imgID !== 'undefined') {
-            $svg = $svg.attr('id', imgID);
-        }
-        // Add replaced image's classes to the new SVG
-        if (typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass + ' replaced-svg');
-        }
+//         // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+//         if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+//             $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+//         }
 
-        // Remove any invalid XML tags as per http://validator.w3.org
-        $svg = $svg.removeAttr('xmlns:a');
+//         // Replace image with new SVG
+//         $img.replaceWith($svg);
 
-        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-        if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-        }
+//     }, 'xml');
 
-        // Replace image with new SVG
-        $img.replaceWith($svg);
-
-    }, 'xml');
-
-});
+// });
