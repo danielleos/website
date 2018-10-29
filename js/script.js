@@ -11,13 +11,13 @@ for (var i = 0; i < collapsibleList.length; i++) {
             content.style.maxHeight = null;  // close it
         } else {  // if the element is closed
             var allCollapsibles = collapsibleList;  // get HTMLCollection
-            Array.prototype.forEach.call(allCollapsibles, function (element) {  // for every element
-                if (element.classList.contains("active") && element.id !== currentId) {  // if that element has the active class and it does not have the currentId of the one that has been clicked
+            for (var j = 0; j < collapsibleList.length; j++) {  // for every element
+                if ((allCollapsibles[j].classList.contains("active")) && (allCollapsibles[j].id !== currentId)) {  // if that element has the active class and it does not have the currentId of the one that has been clicked
                     content.style.maxHeight = null;  // remove the maxHeight value - close it
-                } else if (element.id == currentId) {  // if that element doesn't have the active class
+                } else if (allCollapsibles[j].id == currentId) {  // if that element doesn't have the active class
                     content.style.maxHeight = content.scrollHeight + "px";  // open the element
                 }
-            });
+            }
             // content.style.maxHeight = content.scrollHeight + "px";
             // console.log("add maxHeight: " + content.style.maxHeight);
         }
