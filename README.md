@@ -10,10 +10,9 @@ A GitHub Pages project for my personal website development.
 ## Roadmap
 1. Plan overall website
 - [x] Plan home page
-- [x] Plan interactive CV page
 
 2. Create index.html
-- [x] Create wireframe for public home.html page
+- [x] Create wireframe
 
 3. Create cv.html
 - [x] Add downloadable cv content
