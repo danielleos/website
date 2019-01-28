@@ -256,12 +256,11 @@ div.centered-text {
 p.centered-paragraph {
     height: 100%;
     width: 100%;
-    margin: auto;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    top: 50%;
 }
 
 .subtitle {
