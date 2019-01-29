@@ -91,7 +91,7 @@ a:link, a:visited {
 
 /* mouse over link */
 a:hover, a:active {
-	color: rgb(196, 64, 75);
+	color: rgb(255, 217, 0);
 	text-decoration: none;
 }
 
@@ -114,7 +114,7 @@ a:hover, a:active {
 }
 
 .button:hover p {
-	color: rgb(196, 64, 75);
+	color: rgb(255, 217, 0);
 }
 
 object {
@@ -607,7 +607,7 @@ p.centered-paragraph {
 }
 
 .overlay-menu ul li.active > a, .overlay-menu ul li a:hover {
-    color: rgb(196, 64, 75);
+    color: rgb(255, 217, 0);
     text-decoration: line-through;
 }
 
@@ -674,7 +674,7 @@ p.centered-paragraph {
 }
 
 a.highlighted-link {
-    color: rgb(196, 64, 75);
+    color: rgb(255, 217, 0);
 }
 
 a.highlighted-link:hover {
