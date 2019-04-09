@@ -1,16 +1,6 @@
 /* ################################# */
 /* ############# FONTS ############# */
 /* ################################# */
-/* LightNovelPOP font */
-@font-face {
-	font-family: LightNovelPOP;
-	src: url(fonts/LightNovelPOP.woff) format("woff"),
-		 url(fonts/LightNovelPOP.ttf) format("truetype"),
-		 url(fonts/LightNovelPOP.woff2) format("woff2"),
-		 url(fonts/LightNovelPOP.otf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
 /* Kei font */
 @font-face {
 	font-family: Kei;
