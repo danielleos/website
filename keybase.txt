@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kloxy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://danielleosullivan.com
+  * I am kloxy (https://keybase.io/kloxy) on keybase.
+  * I have a public key ASDyGm06pnX45Ss-jpJ1uRpepuKHYlxtGOqUS31SAAcF0Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f21a6d3aa675f8e52b3e8e9275b91a5ea6e287625c6d18ea944b7d52000705d00a",
+      "host": "keybase.io",
+      "kid": "0120f21a6d3aa675f8e52b3e8e9275b91a5ea6e287625c6d18ea944b7d52000705d00a",
+      "uid": "44a98ff9346a39271ab633a27570b419",
+      "username": "kloxy"
+    },
+    "merkle_root": {
+      "ctime": 1568113430,
+      "hash": "48d4c32485a26a0c3cb31b2ff346bdf94e3336f6d3072f3e8ed9eb9d5b23bdfb5d59081ac6d8252b9375ac1ac8ac2460925669dedb50e18d315e7e360324ff30",
+      "hash_meta": "283f8bc5aa04cb59a41e6d50d4f1d27d1d4c54746c9ebe46323fa6cfd7f82d3e",
+      "seqno": 6382564
+    },
+    "service": {
+      "entropy": "EomICG7RZXrtDg//tlvrPmRA",
+      "hostname": "danielleosullivan.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.0"
+  },
+  "ctime": 1568113441,
+  "expire_in": 504576000,
+  "prev": "2b5278002b13bfc33eeac5d4f604cc334d2c3e5268ef5ae3b1945479fe175786",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg8hptOqZ1+OUrPo6SdbkaXqbih2JcbRjqlEt9UgAHBdAKp3BheWxvYWTESpcCB8QgK1J4ACsTv8M+6sXU9gTMM00sPlJo71rjsZRUef4XV4bEILSQfLV/j1i25xniwbed0hC9Fv/24D5aSO0Sxi0+KkjZAgHCo3NpZ8RAq8zna6/wMd/Os7z1ktbpMF//lJ0dawf0yq8kzxv4fKjiH7teYAT/lDRbbkeJ5aAwg+5iYmwB+RnGxB6xykYbA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJ9PPzRcN5i4nZTVoyxzswtmTdTSlhHi/wHnp5sEdPDHo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kloxy
+
+==================================================================
