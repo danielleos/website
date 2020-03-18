@@ -30,13 +30,13 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #000;
-	font-family: Josefin Sans, Kei, LightNovelPOP, JK Gothic M, sans-serif;
+	font-family: Josefin Sans, Kei, JK Gothic M, sans-serif;
 	font-size: 16px;
 	text-align: center;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: Kei, LightNovelPOP, JK Gothic M, Josefin Sans, sans-serif;
+	font-family: Kei, JK Gothic M, Josefin Sans, sans-serif;
 }
 
 p {
@@ -574,7 +574,7 @@ p.centered-paragraph {
 	display: block;
 	position: relative;
 	overflow: hidden;
-	font-family: Kei, LightNovelPOP, JK Gothic M, Josefin Sans, sans-serif;
+	font-family: Kei, JK Gothic M, Josefin Sans, sans-serif;
 	font-size: 30px;
 	font-weight: 600;
 	color: #fff;
