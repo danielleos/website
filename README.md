@@ -3,21 +3,17 @@
 
 A GitHub Pages/Netlify project for my personal website development.
 
+## Next Gen
+### Roadmap
 
-## Content
-- [x] Home Page
-- [ ] Coding portfolio (CV)
-- [x] Contact page
+#### Exploration
+- [ ] Explore portfolio site designs
+- [ ] Decide on aesthetic
+- [ ] Decide on what site should include
 
-## Roadmap
-1. Plan overall website
-- [x] Plan home page
+#### Design
+- [ ] Create wireframes/prototype in Figma
 
-2. Create index.html
-- [x] Create wireframe
-
-3. Create cv.html
-- [x] Add downloadable cv content
-
-5. Embed code snippets / codepens
-- [ ] Plan what to showcase
+#### Development
+- [ ] Decide on tech stack (Next.js? Tailwind CSS? React? Typescript)
+- [ ] Create POC
